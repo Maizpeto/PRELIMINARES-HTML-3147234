@@ -1,0 +1,74 @@
+/*Selecore descendientes*/
+.mainTitle{
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+#globalNav .mainTitle {
+
+    color: rgb(58, 40, 124);
+    font-size: 16px;
+
+}
+
+.contendor .mainTitle{
+    color: rebeccapurple;
+}
+footer .mainTitle{
+    color: green;
+}
+/* Selector Hijos directo*/
+footer > p {
+    color: violet;
+    background-color: black;
+}
+
+footer > p > span{
+    color: yellow;
+}
+/*Selectores subsiguientes */
+footer h2 ~ p {
+    color: aquamarine;
+    text-decoration: underline;
+}
+/*Selectores hermaos adjacentes se le añade estilos al hermao siguiete*/
+.developer{
+    font-family: Courier, monospace;
+    font-size: 20px;
+}
+
+.developer + p{
+    background-color: cornsilk;
+}
+
+main form button{
+    color: rgb(255, 255, 255);
+    background-color: aqua;
+}
+
+/*Selectores de atributos simple*/
+input[type]{
+    border-bottom:black 2px dotted;
+    border-color: aquamarine;
+    border-top: 4px solid dotted blue;
+}
+
+/*Selector de atributo con valor*/
+
+input[type="password"]{
+    border-left: rgb(106, 110, 49) 10px dashed; /*COLOR ANCHO Y ESTILO PARA UNA BUENA ESTRUCTURA DE LOS BORDES*/
+    border-right: rgb(64, 65, 34) 10px dashed;
+}
+
+/*Selectores on valor al final*/
+/*Enlaces con dominios .org*/
+a[href$=".org"]{
+    color: peru;
+}
+
+/*.com*/
+
+a[href^="Aprendices"]{
+    color: blue;
+}
