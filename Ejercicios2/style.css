@@ -1,0 +1,32 @@
+
+
+/*Reto 1 agregar font-size y una fuente a toos los elementos h 
+*//*Al llamar a todo el body llamara a los h# para agregarle los estilos a cada uno*/
+body h1, h2, h3{
+    font-size: 50px;
+    font-family:Courier, monospace;;
+}
+
+/*Reto 2 quitar el subraado a todos los elementos "a" que esten dentro del contenedor y aregar el color firebrick*/
+
+.contenedor a{
+    text-decoration: none;
+    color: firebrick;
+}
+
+/*Agregar un font-size de 20px y agregar negritas a los elementos "a" que sean hijos directos*/
+
+.contenedor > a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Agrear un color "gold" a el elemento "p" qu esta enseguida del elemento "h2" solo a ese elemento p*/
+h2 + p{
+    color: gold;
+}
+
+/*Agregar un color indigo a todos los parrafos que esten despues de un elemento "h3" y que sean hermanos*/
+h3 ~ p{
+    color: indigo;
+}
