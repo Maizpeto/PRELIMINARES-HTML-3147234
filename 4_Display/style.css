@@ -1,0 +1,49 @@
+.contenedor1 {
+    /*Dispone el elemento en "bloque", utilizara todo el ancho disponible de la pantalla*/
+    /*Si no se le da valor se agregara al 100%
+    --Se le puede propoer propiedades como ancho, alto, padding, margin
+    ---El siguiente elemento que se mostrara en la siguiente linea, "SI se define un bloque lo siguiente que se agrege quedara debajo de este"
+    ----Por defecto lo usan: h, p, div, section */
+    display:block; 
+    background-color: blue;
+    height: 150px;
+
+}
+
+.contenedor2{
+    background-color: tomato;
+    display: block;
+    width: 500px;
+    height: 150px;
+}
+.contenedor3{
+
+    /*Display:Inline, no s ele puede aplicar propiedades de ancho, alto, padding, ni margin
+    -- El siguiente elemento se mostrara en la misma linea , con un espacio
+    por defecto lo usan: span, a, img*/
+
+    display:inline; /*A diferencia del background color, este llegara como limite hasta donde el texto termina*/
+    background-color: lightgreen;
+}
+
+.contenedor4{
+    display: inline;
+    background-color: gold;
+}
+/*Inline-block
+---LOs elementos siguientes se muestran en la siguiente linea (inline)
+-- SE le puede aplicar propiedades de ancho, alto, padding, margin(block)*/
+
+.contenedor5{
+    display: inline-block;
+    background-color:green;
+    height: 150px;
+    width: 600px;
+}
+
+.contenedor6{
+    display: inline-block;
+    background-color: cadetblue;
+    height: 150px;
+    width: 600px;
+}
